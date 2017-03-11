@@ -1,0 +1,21 @@
+/* Utils/Helper Classes */
+.clearfix {
+  zoom: 1;
+
+  &:before {
+    content: '';
+    display: block;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

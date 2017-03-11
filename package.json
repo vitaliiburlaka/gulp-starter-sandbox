@@ -1,0 +1,45 @@
+{
+  "name": "gulp-starter-sandbox",
+  "version": "1.0.0",
+  "description": "A simple Gulp starter sandbox",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliiburlaka/gulp-starter-sanbox.git"
+  },
+  "keywords": [
+    "gulp",
+    "starter",
+    "sandbox",
+    "scss",
+    "javascript",
+    "images"
+  ],
+  "homepage": "https://github.com/vitaliiburlaka/gulp-starter-sandbox",
+  "author": "Vitalii Burlaka <vitalii.burlaka@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "eslint": "^3.17.1",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.1.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {}
+}
