@@ -1,33 +1,24 @@
-# top-most EditorConfig file
+# http://editorconfig.org
 root = true
 
-# Unix-style newlines with a newline ending every file
 [*]
+charset = utf-8
 end_of_line = lf
+indent_size = 2
+indent_style = space
 insert_final_newline = true
+max_line_length = 80
 trim_trailing_whitespace = true
 
-# Matches multiple files with brace expansion notation
-# Set default charset
-[*.{js,json,html,css,scss,less}]
-charset = utf-8
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
 
-# Indentation override for all JS under src directory
-[*.{js,json}]
-indent_style = space
-indent_size = 2
-
-# Indentation override for all HTML/CSS/SASS/LESS under src directory
-[*.{html,css,scss,less}]
-indent_style = space
-indent_size = 2
-
-# Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml}]
-indent_style = space
-indent_size = 2
+[COMMIT_EDITMSG]
+max_line_length = 0
 
 [*.min.*]
+max_line_length = 0
 indent_style = ignore
 trim_trailing_whitespace = false
 insert_final_newline = ignore
