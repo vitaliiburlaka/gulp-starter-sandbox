@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true
+  },
+  "globals": {
+    "jquery": 1,
+    "$": 1
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "space-before-blocks": "error"
+  }
+}
