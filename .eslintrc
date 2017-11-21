@@ -1,11 +1,9 @@
 {
   "env": {
     "browser": true,
-    "commonjs": true
-  },
-  "globals": {
-    "jquery": 1,
-    "$": 1
+    "commonjs": true,
+    "node": true,
+    "jquery": true
   },
   "extends": "eslint:recommended",
   "rules": {
@@ -14,6 +12,10 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "eqeqeq": ["error", "always", { "null": "ignore" }],
-    "space-before-blocks": "error"
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", "never"],
+    "spaced-comment": ["error", "always"],
+    "brace-style": "error",
+    "keyword-spacing": "error"
   }
 }
