@@ -1,7 +1,10 @@
 .DS_STORE
-*~
 node_modules
-npm-debug.log
+*~
+*.log*
+.eslintcache
 public
 *.sublime-project
 *.sublime-workspace
+.vscode
+.idea
