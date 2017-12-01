@@ -41,7 +41,7 @@ gulp.task('scripts', function() {
   .pipe(cached('scripts'))
     .pipe(remember('scripts'))
     .pipe(sourcemaps.init())
-    .pipe(concat('scripts.js'))
+    .pipe(concat('scripts.bundle.js'))
     .pipe(sourcemaps.write('.'))
     .pipe(size({ showFiles: true }))
   .pipe(gulp.dest('public'))
@@ -56,7 +56,7 @@ gulp.task('scripts:prod', function() {
   ])
   .pipe(cached('scripts'))
     .pipe(remember('scripts'))
-    .pipe(concat('scripts.js'))
+    .pipe(concat('scripts.bundle.js'))
     .pipe(uglify({ mangle: false }))
     .pipe(size({ showFiles: true }))
   .pipe(gulp.dest('public'));
@@ -64,11 +64,10 @@ gulp.task('scripts:prod', function() {
 
 
 // Copy images to destination directory
-gulp.task('images', function(done) {
+gulp.task('images', function() {
   return gulp.src('src/images/**/*.+(png|jpg|jpeg|gif|svg)')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('public/images')),
-    done();
+    .pipe(gulp.dest('public/images'));
 });
 
 
@@ -124,7 +123,7 @@ gulp.task('watch', function() {
   gulp.watch('src/images/**/*.+(png|jpg|jpeg|gif|svg)', ['images']);
 
   var scriptsWatcher = gulp.watch('src/**/*.js', ['scripts']);
-  scriptsWatcher.on('change', function (event) {
+  scriptsWatcher.on('change', function(event) {
     if (event.type === 'deleted') { // if a file is deleted, forget about it
       delete cached.caches['scripts'][event.path];
       remember.forget('scripts', event.path);
@@ -151,7 +150,7 @@ gulp.task('build:prod', function(done) {
 
 
 gulp.task('default', function(done) {
-  runSequence(['build', 'server', 'watch'],
+  runSequence('build', ['server', 'watch'],
     done
   );
 });
