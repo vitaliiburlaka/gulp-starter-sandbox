@@ -1,3 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  window.console.log('Hello from Gulp Starter Sandbox! \\(^_^)/');
-});
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Hello from Gulp Starter Sandbox! \\(^_^)/');
+  });
+})();

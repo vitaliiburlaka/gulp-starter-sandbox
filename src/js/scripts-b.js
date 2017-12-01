@@ -1,3 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  window.console.log('Hello from scripts-b!');
-});
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Hello from scripts-b!');
+  });
+})();
