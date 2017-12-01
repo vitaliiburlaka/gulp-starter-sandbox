@@ -4,6 +4,8 @@
   "description": "A simple Gulp starter sandbox",
   "main": "index.html",
   "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,14 +14,12 @@
   },
   "keywords": [
     "gulp",
-    "starter",
-    "sandbox",
-    "scss",
     "javascript",
-    "images"
+    "sandbox",
+    "scss"
   ],
   "homepage": "https://github.com/vitaliiburlaka/gulp-starter-sandbox",
-  "author": "Vitalii Burlaka <vitalii.burlaka@gmail.com>",
+  "author": "@vitaliiburlaka",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
