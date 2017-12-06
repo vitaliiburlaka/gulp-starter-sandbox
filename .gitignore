@@ -3,7 +3,7 @@ node_modules
 *~
 *.log*
 .eslintcache
-public
+dist
 *.sublime-project
 *.sublime-workspace
 .vscode
