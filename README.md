@@ -40,6 +40,6 @@ npm run deploy
 ## Features
 
 - Syles (Sass/SCSS) pre-processing, autoprefixing and minification
-- Scripts and npm dependencies (JavaScript) concatenation and uglifying
+- Scripts and npm dependencies (JavaScript) linting, concatenation and uglifying
 - Images compression and optimization
 - File watching and live-reloading server with BrowserSync
