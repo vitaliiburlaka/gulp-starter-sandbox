@@ -1,0 +1,49 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all .15s;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+
+.main-header {
+  background: $shark-dark;
+  padding: $content-padding-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.banner {
+  color: $primary;
+  font-size: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translateY(5px) rotate(-8deg);
+
+  &__title {
+    font-weight: 700;
+    display: block;
+    font-style: italic;
+  }
+
+  &__caption {
+    font-size: 22px;
+    display: block;
+    transform: translateX(5px);
+  }
+}
+
+
+.main-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: $content-padding-base;
+  text-align: center;
+}

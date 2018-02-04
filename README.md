@@ -3,10 +3,10 @@
 Static site sandbox powered by Gulp.
 
 
-### Getting started
+## Getting started
 
 1. Download and install [Node.js](https://nodejs.org) for your OS.
-2. Install Gulp CLI on the command-line with `npm install -g gulp`
+2. Install Gulp CLI globally on your machine from the command-line: `npm install -g gulp`
 
 ```bash
 git clone http://github.com/vitaliiburlaka/gulp-starter-sandbox.git
@@ -14,28 +14,32 @@ cd gulp-starter-sandbox
 npm install
 ```
 
-#### Available Tasks:
-##### Local Dev server
+### Available Tasks
+#### Local Dev server
 
 ```
 npm start
 ```
 
-##### Development build
+#### Development build
+
+Will generate processed files *(with the source maps)* to the "./dist" directory
 
 ```
 npm run build
 ```
 
-##### Production build
+#### Production build
+
+Will generate optimized files *(without the source maps)* to the `./dist` directory
 
 ```
 npm run deploy
 ```
 
-### Features
+## Features
 
-- Compiles, autoprefixes and minimizes your syles (Sass/SCSS)
-- Concatenates and Uglifys your JavaScript and dependency modules
-- Compresses and optimizes your images
-- File watching and live-reloading with BrowserSync
+- Syles (Sass/SCSS) pre-processing, autoprefixing and minification
+- Scripts and npm dependencies (JavaScript) concatenation and uglifying
+- Images compression and optimization
+- File watching and live-reloading server with BrowserSync

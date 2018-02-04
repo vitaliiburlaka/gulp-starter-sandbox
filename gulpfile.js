@@ -78,7 +78,7 @@ gulp.task('html', function() {
 // Compile App styles
 gulp.task('styles', function() {
   var plugins = [
-    autoprefixer(),
+    autoprefixer({ flexbox: 'no-2009' }),
     cssnano()
   ];
   return gulp.src(paths.styles)
@@ -126,12 +126,12 @@ gulp.task('images', function() {
   return gulp.src(paths.images)
     .pipe(changed(paths.dist))
     .pipe(cache(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
       imagemin.svgo({
         plugins: [
-          {cleanupIDs: true}
+          { cleanupIDs: true }
         ]
       })
     ])))

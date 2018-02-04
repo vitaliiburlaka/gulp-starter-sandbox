@@ -1,5 +1,4 @@
-/* Utils/Helper Classes */
-.clearfix {
+@mixin clearfix {
   &::after {
     display: block;
     content: "";
