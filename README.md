@@ -1,6 +1,6 @@
 # Gulp Starter Sandbox
 
-Static site sandbox powered by Gulp.
+A JavaScript/SCSS sandbox powered by Gulp.
 
 
 ## Getting started

@@ -1,7 +1,8 @@
 {
   "name": "gulp-starter-sandbox",
   "version": "1.0.0",
-  "description": "Static site sandbox powered by Gulp",
+  "description": "A JavaScript/SCSS sandbox powered by Gulp.",
+  "private": true,
   "main": "index.html",
   "scripts": {
     "lint": "echo \"Linting code...\"&& eslint ./src --cache --ignore-pattern .gitignore",
@@ -16,24 +17,15 @@
     "type": "git",
     "url": "git+https://github.com/vitaliiburlaka/gulp-starter-sanbox.git"
   },
-  "keywords": [
-    "gulp",
-    "javascript",
-    "scss",
-    "sandbox"
-  ],
   "homepage": "https://github.com/vitaliiburlaka/gulp-starter-sandbox",
   "author": "@vitaliiburlaka",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.3.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
-    "browser-sync": "^2.23.6",
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.4",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
-    "eslint": "^4.17.0",
+    "eslint": "^4.19.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^1.0.2",
     "gulp-cached": "^1.1.1",
@@ -45,7 +37,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-remember": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.1",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
