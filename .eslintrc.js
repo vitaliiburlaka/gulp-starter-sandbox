@@ -6,8 +6,10 @@ module.exports = {
     "node": true,
     "jquery": true
   },
-  extends: ['eslint:recommended'],
-  "rules": {
+  extends: ['eslint:recommended', 'prettier'],
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': 'error',
     'no-unused-vars': [
       2,
       {

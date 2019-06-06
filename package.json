@@ -2,20 +2,23 @@
   "name": "gulp-starter-sandbox",
   "version": "2.0.0",
   "description": "🥤Gulp powered Sandbox",
-  "private": true,
-  "main": "index.html",
+  "author": "Vitalii Burlaka <vitalii.burlaka@gmail.com>",
+  "main": "dist/index.html",
   "scripts": {
-    "lint": "echo \"Linting code...\"&& eslint ./src --cache --ignore-pattern .gitignore",
     "start": "gulp",
+    "lint": "eslint --ignore-path .gitignore --ext .js .",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier \"**/*.{json,md,css,scss,html}\"",
     "build:dev": "gulp build",
     "build": "gulp build --prod"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vitaliiburlaka/gulp-starter-sanbox.git"
   },
   "homepage": "https://github.com/vitaliiburlaka/gulp-starter-sandbox",
-  "author": "Vitalii Burlaka <vitalii.burlaka@gmail.com>",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.6.0",
@@ -23,6 +26,8 @@
     "cssnano": "^4.1.10",
     "del": "^4.1.1",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-cache": "^1.1.1",
     "gulp-cached": "^1.1.1",
@@ -39,7 +44,25 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-wrap": "^0.15.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
     "path": "^0.12.7",
+    "prettier": "^1.17.1",
     "yargs": "^13.2.4"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --ignore-path .gitignore --fix",
+      "git add"
+    ],
+    "*.{json,md,css,scss,html}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
