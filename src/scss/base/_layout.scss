@@ -1,13 +1,12 @@
 a {
   text-decoration: none;
   color: inherit;
-  transition: all .15s;
+  transition: all 0.15s;
 
   &:hover {
     color: $primary;
   }
 }
-
 
 .main-header {
   background: $shark-dark;
@@ -17,7 +16,6 @@ a {
   justify-content: center;
   flex-direction: column;
 }
-
 
 .banner {
   color: $primary;
@@ -39,7 +37,6 @@ a {
     transform: translateX(5px);
   }
 }
-
 
 .main-content {
   max-width: 960px;

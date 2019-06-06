@@ -1,12 +1,11 @@
-# Gulp Starter Sandbox
+# 🥤Gulp Starter Sandbox
 
-A JavaScript/SCSS sandbox powered by Gulp.
-
+Gulp powered Sandbox.
 
 ## Getting started
 
 1. Download and install [Node.js](https://nodejs.org) for your OS.
-2. Install Gulp CLI globally on your machine from the command-line: `npm install -g gulp`
+2. Install Gulp CLI globally on your machine from the command-line: `npm install -g gulp-cli`
 
 ```bash
 git clone http://github.com/vitaliiburlaka/gulp-starter-sandbox.git
@@ -15,6 +14,7 @@ npm install
 ```
 
 ### Available Tasks
+
 #### Local Dev server
 
 ```
@@ -23,18 +23,18 @@ npm start
 
 #### Development build
 
-Will generate processed files *(with the source maps)* to the "./dist" directory
+Will generate processed files _(with the source maps)_ to the "./dist" directory
 
 ```
-npm run build
+npm run build:dev
 ```
 
 #### Production build
 
-Will generate optimized files *(without the source maps)* to the `./dist` directory
+Will generate optimized files _(without the source maps)_ to the `./dist` directory
 
 ```
-npm run deploy
+npm run build
 ```
 
 ## Features
